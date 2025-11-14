@@ -95,3 +95,16 @@
 #    summa += i
 #print(f"Summa on {summa}")
 
+import random
+summa = 0
+
+n = random.randint(2, 10)
+for i in range(n):
+    try:
+        arv = int(input("Sisesta suvaline arv: "))
+        break
+    except:
+        print("Palun sesesta korrektne arv!")
+    if arv < 0:
+        summa += arv
+print(f"Negatiivsete arvude summa on {summa}")
